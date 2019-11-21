@@ -86,4 +86,6 @@ VOLUME [ "/workspace" ]
 USER developer
 WORKDIR /workspace
 
+EXPOSE 3000/tcp
+
 ENTRYPOINT ["/bin/bash"]
