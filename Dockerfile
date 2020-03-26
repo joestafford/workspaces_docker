@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM mcr.microsoft.com/azure-cli
 
 # Perform apt installations on this layer
 # 'groff' is needed for awscli
