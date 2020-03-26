@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
     zip \
     ca-certificates \
     apt-transport-https \
-    lsb_release \
+    lsb-release \
     gnupg \
     gzip \
     tar \
