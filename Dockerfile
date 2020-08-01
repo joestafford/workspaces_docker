@@ -3,7 +3,7 @@ FROM ubuntu:latest
 # Perform apt installations on this layer
 # 'groff' is needed for awscli
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
+RUN export DEBIAN_FRONTEND=noninteractive && apt-get update && apt-get install -y \
     curl \
     sudo \
     gpg \
