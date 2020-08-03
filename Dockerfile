@@ -29,4 +29,7 @@ RUN kubectl completion bash >/etc/bash_completion.d/kubectl
 RUN helm completion bash >/etc/bash_completion.d/helm
 RUN terraform -install-autocomplete
 
+# Create blank kubeconfig and parent directory
+RUN mkdir -p /root/.kube && touch /root/.kube/config
+
 ENTRYPOINT ["/bin/bash"]
