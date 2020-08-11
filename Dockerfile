@@ -12,6 +12,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && apt-get update && apt-get install -
     python3-pip \
     zip \
     gzip \
+    tmux \
     tar \
     && rm -rf /var/lib/apt/lists/*
 
