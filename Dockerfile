@@ -20,8 +20,8 @@ RUN export DEBIAN_FRONTEND=noninteractive && apt-get update && apt-get install -
 RUN pip3 install --upgrade pip && pip install azure-cli --use-feature=2020-resolver
 
 # Install tools from other images
-COPY --from=alpine/terragrunt:0.13.1 /bin/terraform /usr/local/bin/terraform
-COPY --from=alpine/terragrunt:0.13.1 /usr/local/bin/terragrunt /usr/local/bin/terragrunt
+COPY --from=alpine/terragrunt:0.13.0 /bin/terraform /usr/local/bin/terraform
+COPY --from=alpine/terragrunt:0.13.0 /usr/local/bin/terragrunt /usr/local/bin/terragrunt
 COPY --from=alpine/helm:3.2.4 /usr/bin/helm /usr/local/bin/helm
 COPY --from=bitnami/kubectl:latest /opt/bitnami/kubectl/bin/kubectl /usr/local/bin/kubectl
 
